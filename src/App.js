@@ -12,13 +12,13 @@ class QuoteBox extends React.Component {
   }
   
   fetchQuote = () => {
-    fetch("https://api.quotable.io/random?size=1")
+    fetch("https://dummyjson.com/quotes/random/1")
       .then(response => response.json())
       .then(data => {
-        console.log(data);
+        console.log(data[0]);
         this.setState({
-        quote: data.content,
-        author: data.author
+        quote: data[0].quote,
+        author: data[0].author
       });
       })
       .catch(error => {
