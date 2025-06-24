@@ -1,9 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import {legacy_createStore as createStore, combineReducers, applyMiddleWare} from 'redux';
-import {Provider, useDispatch, useSelector, connect} from 'react-redux'
-import { error } from 'jquery';
 
 class QuoteBox extends React.Component {
   constructor(props){
