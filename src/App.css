@@ -47,3 +47,23 @@ h1 {
   margin: 0;
   padding-top: 20px;
 }
+
+@media (max-width: 600px) {
+  .quote-box {
+    width: 90%;
+    min-height: 300px;
+    padding: 10px;
+  }
+  
+  .new-quote {
+    bottom: -43px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+
+  a {
+    margin: 5px;
+  }
+}
